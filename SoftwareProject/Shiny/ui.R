@@ -28,10 +28,9 @@ shinyUI(navbarPage("Irish Tourism Trends",
                             br(),
                             br(),
                             br(),
-                            br(),
+                            br()
                             
-                            column(12,
-                                   h6("Created by Robbie Jenkinson - National College of Ireland 2018 - Data: Central Statistics Office - license : https://creativecommons.org/licenses/by/4.0/"))
+                            
                              
                       
                     ),
@@ -75,11 +74,10 @@ shinyUI(navbarPage("Irish Tourism Trends",
                                            plotlyOutput("plotPieChartForeign")),
                                     
                                     column(6,
-                                           plotlyOutput("plotPieChartForeign2")),
+                                           plotlyOutput("plotPieChartForeign2"))
                                     
                                     
-                                    column(12,
-                                           h6("Created by Robbie Jenkinson - National College of Ireland 2018 - Data: Central Statistics Office - license : https://creativecommons.org/licenses/by/4.0/"))
+                                    
                                     )
                            )
 ),
@@ -96,14 +94,49 @@ tabPanel("Visitors",
                     plotlyOutput("plotPieExpend")),
              column(12,
                     plotlyOutput("plotCor"))
-           ),
-           column(12,
-                  h6("Created by Robbie Jenkinson - National College of Ireland 2018 - Data: Central Statistics Office - license : https://creativecommons.org/licenses/by/4.0/"))
+           )
+           
          )
-         )
+         ),
+tabPanel("About",
+         h1("About Page", align = "center"),
+         br(),
+         p(h2("About the Developer:",align = "center")),
+         br(),
+         p(h5("This platform was developed by Robbie Jenkinson, a 4th year Data analytics student at the National College of Ireland. This Project was created
+              using data from the CSO(Central Statistics Office), and software form plotly which is a free, open-source visualisation software.",align = "center")),
+         br(),
+         p(h2("Licenses:",align = "center")),
+         br(),
+         p(h6("CSO: https://creativecommons.org/licenses/by/4.0/ ",align = "center")),
+         br(),
+         p(h6("Plotly: The MIT License (MIT)",align = "center")),
+         br(),
+         p(h6("Copyright (c) 2018 Plotly, Inc",align = "center")),
+         br(),
+         p(h6("Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the 'Software'), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:",align = "center")),
+         br(),
+         p(h6("The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.",align = "center")),
+    br(),
+    p(h6("THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.",align = "center"))
+         
+         
              
 )
 )     
+)
 
 
 
